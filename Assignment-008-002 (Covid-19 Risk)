@@ -1,0 +1,27 @@
+age = input ("Are you a cigarette addict older than 75 years old?\n\
+Write yes for approval and no for denie " )
+if age == "no":
+    age=False
+else:
+    age=True
+# print(age)
+chronic = input("Do you have a severe chronic disease?\n\
+Write yes for approval and only press enter for no ")
+if chronic == "no":
+    chronic=False
+else:
+    chronic=True
+# print(chronic)
+immune = input("Is your immune system too weak?\n\
+Write yes for approval and only press enter for no ")
+if immune == "no":
+    immune=False
+else:
+    immune=True
+# print(immune)
+risk = age or chronic or immune
+print (risk)
+if (risk==True):
+    print("You are in risky group")
+else:
+    print("You are not in risky group")
