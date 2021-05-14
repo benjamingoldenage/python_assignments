@@ -1,0 +1,9 @@
+x = input("enter a sentence:")
+def check_freq (x):
+    freq = {}
+    for c in set(x):
+       freq[c] = x.count(c)
+    return freq
+    
+    
+    
